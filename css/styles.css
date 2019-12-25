@@ -1,0 +1,78 @@
+:root {
+    --fuente-principal: 'Lato', sans-serif;
+    --primario: #da595e;
+    --oscuro: #484848;
+    --claro: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+/* Interfaz */
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/arriba.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header {
+    display: flex;
+    align-self: start;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.navegacion a {
+    color: var(--claro);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+.contenido-hero {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: max-content;
+}
+
+.contenido-hero h1 {
+    grid-column: 2 / 3;
+    color: var(--claro);
+}
+
+.contenido-hero form {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
