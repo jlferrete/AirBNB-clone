@@ -75,4 +75,35 @@ h3 {
 .contenido-hero form {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    position: relative;
+    display: flex;
+    height: 4rem;
+}
+
+form input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(1% + 1rem) calc(1% + .8rem);
+    padding-left: 5rem;
+    font-size: 1.6rem;
+}
+
+form input[type="submit"] {
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    padding: .7rem 2rem;
+    border: none;
+    background-color: var(--primario);
+    color: var(--claro);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
 }
